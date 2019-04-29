@@ -1,0 +1,24 @@
+
+<form #stdform="ngForm" role="form">
+
+  <div class="col-sm-6  ">
+    <mat-form-field>
+      <input id="name" matInput   placeholder="Name" name=name #nref='ngModel' required [(ngModel)]="std.Name">
+    </mat-form-field>
+    </div>
+
+    <div class="col-sm-6  ">
+        <mat-form-field>
+          <input id="name" matInput   placeholder="Age" name=age #aref='ngModel' required [(ngModel)]="std.Age">
+        </mat-form-field>
+        </div>
+
+        <div class="col-sm-6  ">
+            <mat-select [(ngModel)]="std.DepartmentId" placeholder="Select">
+                <mat-option value="option">Option</mat-option>
+              </mat-select>
+            </div>
+
+
+</form>
+
